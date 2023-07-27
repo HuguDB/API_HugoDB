@@ -32,3 +32,5 @@ On parle d’une api REST quand une ressource unique est accessible par une rout
 OAuth2 : norme conçu pour permettre à un site internet d’accéder à des ressources hébergées par d’autre application Web au nom d’un utilisateur
 
 pour installer une appli : npm install <nomModule>
+
+En résumé, l'API REST est un moyen pratique pour faire communiquer différentes applications sur le web. Elle suit des règles simples et efficaces pour échanger des informations entre programmes de manière sécurisée et facile à comprendre.
