@@ -1,3 +1,5 @@
+API REST
+
 Une API REST (Representational State Transfer) est un type d'interface de programmation qui permet à différentes applications de communiquer entre elles via des requêtes HTTP standard. Elle repose sur les principes de l'architecture REST, qui est conçue pour faciliter l'interaction entre les clients et les serveurs de manière simple et efficace.
 
 Qu'est-ce qu'une API REST ?
