@@ -1,11 +1,12 @@
 # API_HugoDB
 //constantes
+// Importation des modules nécessaires
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 
-//fichier de route
+// Importation des fichiers de route
 const connexionRoutes = require('./src/routes/connexionRoutes');
 const etudiantRoutes = require('./src/routes/etudiantRoutes');
 const intervenantRoutes = require('./src/routes/intervenantRoutes');
@@ -24,22 +25,19 @@ const specialiteRoutes = require('./src/routes/specialiteRoutes');
 const typeSalleRoutes = require('./src/routes/typeSalleRoutes');
 const coursRoutes = require('./src/routes/coursRoutes');
 
-
-//fichier variable d env
+// Chargement des variables d'environnement depuis le fichier '.local-env'
 dotenv.config({ path: './.local-env' });
 
-//autres constantes
-const PORT = process.env.PORT || '3001';
-const app = express();
+// Définition d'autres constantes
+const PORT = process.env.PORT || '3001'; // Le port du serveur est défini par une variable d'environnement, sinon il utilisera le port 3001 par défaut
+const app = express(); // Création de l'application Express
 
-//middleware
-app.use(express.json());
-app.use(bodyParser.json());
-app.use(cors());
+// Configuration des middlewares
+app.use(express.json()); // Permet de parser les requêtes entrantes avec des corps de type JSON
+app.use(bodyParser.json()); // Middleware obsolète pour parser les requêtes avec des corps de type JSON (doublon avec le middleware précédent)
+app.use(cors()); // Active la prise en charge du partage des ressources interdomaines (CORS) pour permettre à l'API d'être accessible depuis différents domaines
 
-//passage des routes
-//signRoutes(app);
-//app.use('/', signRoutes);
+// Attribution des routes aux différentes URL
 app.use('/connexion', connexionRoutes);
 app.use('/etudiant', etudiantRoutes);
 app.use('/intervenant', intervenantRoutes);
@@ -58,13 +56,15 @@ app.use('/specialite', specialiteRoutes);
 app.use('/typeSalle', typeSalleRoutes);
 app.use('/cours', coursRoutes);
 
+// Route par défaut, répond avec un objet JSON contenant des informations sur le serveur
 app.use('/', (req, res, next) => {
     res.status(200).json({ serverPort: `${PORT}`, status: 'running' });
     return;
     //res.send(`<h1>Server du projet Signature sur le port ${PORT}</h1>`)
 })
 
-//ecoute du port
+// Écoute du port spécifié
 app.listen(PORT, () =>
     console.log(`server started on port ${PORT}`)
 );
+// Le code crée une API utilisant le framework Express en Node.js. Il configure des routes pour gérer différents points d'extrémité de l'API et écoute un port spécifié pour les requêtes entrantes. Il utilise également CORS pour permettre l'accès à l'API à partir de différents domaines.
