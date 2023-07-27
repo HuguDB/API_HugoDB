@@ -1,7 +1,7 @@
 # API_HugoDB
  Note API Hugo DEBARRE
 
-API : c'est un pc qui va chercher des ressources sur un autre (contrairement au WEB). Cela permet de faire l’interface entre deux technos différentes afin de pouvoircomminuqer entre elles.
+API : c'est un pc qui va chercher des ressources sur un autre (contrairement au WEB). Cela permet de faire l’interface entre deux technos différentes afin de pouvoir communiquer entre elles.
 
 Réponse en format JSON ou XML
 
