@@ -1,5 +1,5 @@
 # API_HugoDB
-//constantes
+
 // Importation des modules nécessaires
 const express = require('express');
 const cors = require('cors');
