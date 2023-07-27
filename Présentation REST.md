@@ -5,23 +5,23 @@ Une API REST est un ensemble de règles et de conventions qui permettent à des 
 
 Caractéristiques :
 
-    Stateless : Chaque requête d'un client au serveur doit contenir toutes les informations nécessaires pour comprendre et traiter la requête. Le serveur ne conserve aucune information sur l'état du client entre les requêtes. Cela permet une meilleure scalabilité et une gestion plus simple des erreurs.
+Stateless : Chaque requête d'un client au serveur doit contenir toutes les informations nécessaires pour comprendre et traiter la requête. Le serveur ne conserve aucune information sur l'état du client entre les requêtes. Cela permet une meilleure scalabilité et une gestion plus simple des erreurs.
 
-    Manipulation des ressources : Les ressources sont les éléments clés de l'API REST, et chaque ressource est identifiée par une URL unique. Les méthodes HTTP (GET, POST, PUT, DELETE) sont utilisées pour créer, lire, mettre à jour ou supprimer des ressources.
+Manipulation des ressources : Les ressources sont les éléments clés de l'API REST, et chaque ressource est identifiée par une URL unique. Les méthodes HTTP (GET, POST, PUT, DELETE) sont utilisées pour créer, lire, mettre à jour ou supprimer des ressources.
 
-    Représentations des ressources : Les données associées aux ressources sont généralement transmises sous forme de représentations, comme JSON ou XML, pour faciliter l'échange d'informations entre le client et le serveur.
+Représentations des ressources : Les données associées aux ressources sont généralement transmises sous forme de représentations, comme JSON ou XML, pour faciliter l'échange d'informations entre le client et le serveur.
 
-    Interfaces uniformes : Les API REST utilisent des interfaces uniformes, ce qui signifie que les conventions de nommage et de comportement sont cohérentes et standardisées, ce qui facilite leur utilisation et leur compréhension.
+Interfaces uniformes : Les API REST utilisent des interfaces uniformes, ce qui signifie que les conventions de nommage et de comportement sont cohérentes et standardisées, ce qui facilite leur utilisation et leur compréhension.
 
 Avantages d'une API REST :
 
-    Facilité d'utilisation : L'API REST est basée sur des standards web courants tels que HTTP, rendant son utilisation intuitive pour les développeurs familiers avec le protocole.
+Facilité d'utilisation : L'API REST est basée sur des standards web courants tels que HTTP, rendant son utilisation intuitive pour les développeurs familiers avec le protocole.
 
-    Interopérabilité : Les API REST permettent l'échange de données entre différents systèmes et plateformes, favorisant l'interopérabilité entre les applications.
+Interopérabilité : Les API REST permettent l'échange de données entre différents systèmes et plateformes, favorisant l'interopérabilité entre les applications.
 
-    Extensibilité : Les ressources peuvent être facilement étendues pour prendre en charge de nouvelles fonctionnalités sans affecter les clients existants.
+Extensibilité : Les ressources peuvent être facilement étendues pour prendre en charge de nouvelles fonctionnalités sans affecter les clients existants.
 
-    Performances : Grâce à son caractère Stateless, l'API REST est plus légère et permet une meilleure scalabilité, ce qui améliore les performances.
+Performances : Grâce à son caractère Stateless, l'API REST est plus légère et permet une meilleure scalabilité, ce qui améliore les performances.
 
 
 Les API REST sont devenues un standard de facto pour la création d'interfaces de programmation modernes et conviviales. Leur approche basée sur des standards web, leur simplicité d'utilisation et leur flexibilité en font un choix idéal pour faciliter la communication entre les différentes parties d'un système distribué. En adoptant les principes REST, les développeurs peuvent créer des applications robustes, interopérables et évolutives.
